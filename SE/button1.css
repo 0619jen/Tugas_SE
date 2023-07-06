@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    flex: 1;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .item:hover {
+    background-color: yellow;
+  }
+  
+  .item.booked {
+    background-color: red;
+    cursor: not-allowed;
+  }
